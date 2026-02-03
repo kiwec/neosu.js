@@ -1,6 +1,12 @@
 # neosu.js
 
-**Experimental** library to interact with the neosu server, and other neosu-related tooling.
+Experimental library to interact with the neosu server, and other neosu-related tooling.
+
+### Installation
+
+```
+npm install neosu
+```
 
 ### pp
 

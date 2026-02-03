@@ -4,5 +4,9 @@
   "license": "GPL-3.0",
   "author": "kiwec",
   "main": "index.js",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwec/neosu.js.git"
+  }
 }
