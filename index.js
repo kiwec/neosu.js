@@ -1,4 +1,4 @@
-import Module from './bin/neosu.js';
+import createModule from './bin/neosu.js';
 
 // Annoying, but we need to track if the module is 'alive'
 //
@@ -12,7 +12,12 @@ let alive = true;
 let module;
 
 async function init() {
-    module = await Module();
+    module = await createModule({
+        wasmMemory: new WebAssembly.Memory({
+            initial: 256,
+            maximum: 1024,
+        })
+    });
     module.onAbort = () => { alive = false; };
     alive = true;
 }
